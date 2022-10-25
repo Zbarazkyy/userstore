@@ -1,0 +1,35 @@
+#####/userinfo
+GET http://localhost:8080/api/v1/clients-store/userinfo/3
+Accept: application/json
+Content-Type: application/json
+x-process-ref: testProcessRef
+
+
+{
+  "request_ref": "2909testRequestRef1451"
+}
+
+#####/levelinfo
+GET http://localhost:8080/api/v1/clients-store/levelinfo/3
+Accept: application/json
+Content-Type: application/json
+x-process-ref: testProcessRef
+
+
+{
+  "request_ref": "2909testRequestRef1451"
+}
+
+#####/set
+POST http://localhost:8080/api/v1/clients-store/setinfo
+Accept: application/json
+Content-Type: application/json
+x-process-ref: testProcessRef
+
+
+{
+  "request_ref": "2909testRequestRef1451",
+  "data" : {
+    "user_id":3,"level_id":24,"result":11
+  }
+}
